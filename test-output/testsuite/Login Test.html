@@ -1,0 +1,124 @@
+<html>
+<head>
+<title>TestNG:  Login Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Login Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>3/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Dec 13 17:16:12 GMT 2022</td>
+</tr>
+<tr><td>Total time:</td><td>18 seconds (18395 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.herokuapp.testsuite.LoginPageTest.verifyTheUsernameErrorMessage()'><b>verifyTheUsernameErrorMessage</b><br>Test class: com.herokuapp.testsuite.LoginPageTest<br/>
+<a href="#Output-2054787417" onClick='toggleBox("Output-2054787417", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2054787417" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2054787417">
+Entering tomsmith1 User Name [[ChromeDriver: chrome on WINDOWS (a77ec1d4b4782c089fca86ee5f4abf0c)] -> id: username]<br/>
+Entering SuperSecretPassword! User Name [[ChromeDriver: chrome on WINDOWS (a77ec1d4b4782c089fca86ee5f4abf0c)] -> id: password]<br/>
+click on Loging Button[[ChromeDriver: chrome on WINDOWS (a77ec1d4b4782c089fca86ee5f4abf0c)] -> xpath: //button[@type='submit']]<br/>
+Entering invalid user and password [[ChromeDriver: chrome on WINDOWS (a77ec1d4b4782c089fca86ee5f4abf0c)] -> xpath: //div[@id='flash-messages']]<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.herokuapp.testsuite.LoginPageTest@1786f9d5</td></tr>
+<tr>
+<td title='com.herokuapp.testsuite.LoginPageTest.UserShouldLoginSuccessfullyWithValidCredentials()'><b>UserShouldLoginSuccessfullyWithValidCredentials</b><br>Test class: com.herokuapp.testsuite.LoginPageTest<br/>
+<a href="#Output-1486553742" onClick='toggleBox("Output-1486553742", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1486553742" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1486553742">
+Entering tomsmith User Name [[ChromeDriver: chrome on WINDOWS (85eb5309981b566ac69da275c4ab7dc3)] -> id: username]<br/>
+Entering SuperSecretPassword! User Name [[ChromeDriver: chrome on WINDOWS (85eb5309981b566ac69da275c4ab7dc3)] -> id: password]<br/>
+click on Loging Button[[ChromeDriver: chrome on WINDOWS (85eb5309981b566ac69da275c4ab7dc3)] -> xpath: //button[@type='submit']]<br/>
+verify Secure Area text [[ChromeDriver: chrome on WINDOWS (85eb5309981b566ac69da275c4ab7dc3)] -> xpath: //h2[text()=' Secure Area']]<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.herokuapp.testsuite.LoginPageTest@1786f9d5</td></tr>
+<tr>
+<td title='com.herokuapp.testsuite.LoginPageTest.verifyThePasswordErrorMessage()'><b>verifyThePasswordErrorMessage</b><br>Test class: com.herokuapp.testsuite.LoginPageTest<br/>
+<a href="#Output-1290698656" onClick='toggleBox("Output-1290698656", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1290698656" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1290698656">
+Entering tomsmith User Name [[ChromeDriver: chrome on WINDOWS (ee74e80bef5482577a847732c2af2b28)] -> id: username]<br/>
+Entering SuperSecretPassword User Name [[ChromeDriver: chrome on WINDOWS (ee74e80bef5482577a847732c2af2b28)] -> id: password]<br/>
+click on Loging Button[[ChromeDriver: chrome on WINDOWS (ee74e80bef5482577a847732c2af2b28)] -> xpath: //button[@type='submit']]<br/>
+Entering invalid user and password [[ChromeDriver: chrome on WINDOWS (ee74e80bef5482577a847732c2af2b28)] -> xpath: //div[@id='flash-messages']]<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.herokuapp.testsuite.LoginPageTest@1786f9d5</td></tr>
+</table><p>
+</body>
+</html>
